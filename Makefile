@@ -34,7 +34,7 @@ stop: ## Stop and remove a running container
 release: build-nc publish ## Make a full release
 
 publish: ## Tag and publish container
-	@echo 'create tag $(DOCKER_TAG)'
-	docker tag $(DOCKER_ACCOUNT)/$(APP_NAME) $(DOCKER_ACCOUNT)/$(APP_NAME):$(DOCKER_TAG)
-	@echo 'publish $(VERSION) to $(DOCKER_ACCOUNT)/$(APP_NAME):$(DOCKER_TAG)'
-	docker push $(DOCKER_ACCOUNT)/$(APP_NAME):$(DOCKER_TAG)
+	@echo 'create tag $(VERSION)'
+	docker tag $(DOCKER_ACCOUNT)/$(APP_NAME) $(DOCKER_ACCOUNT)/$(APP_NAME):$(VERSION)
+	@echo 'publish $(VERSION) to $(DOCKER_ACCOUNT)/$(APP_NAME):$(VERSION)'
+	docker push $(DOCKER_ACCOUNT)/$(APP_NAME):$(VERSION)
