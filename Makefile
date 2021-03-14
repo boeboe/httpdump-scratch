@@ -1,5 +1,5 @@
 # General release info
-APP_NAME				= httpdump-alpine
+APP_NAME				= httpdump-scratch
 DOCKER_ACCOUNT	= boeboe
 VERSION					= 1.0.0
 

@@ -13,11 +13,11 @@ FROM scratch
 
 ARG VERSION=latest
 
-LABEL component="httpdump-alpine"
-LABEL description="Golang binary httpdump in an alpine container"
+LABEL component="httpdump-scratch"
+LABEL description="Golang binary httpdump in a scratch container"
 LABEL version=${VERSION}
 LABEL maintainer="Bart Van Bos <bartvanbos@gmail.com>"
-LABEL source-repo="https://github.com/boeboe/httpdump-alpine"
+LABEL source-repo="https://github.com/boeboe/httpdump-scratch"
 
 WORKDIR /
 COPY --from=builder /go/bin/httpdump /httpdump

@@ -1,8 +1,10 @@
-# Httpdump container
+## httpdump scratch container
 
-A small alpine docker container with httpdump, compressed with upx
+A small scratch based docker container with httpdump, compressed with upx
 
 https://github.com/hsiafan/httpdump
+
+https://github.com/boeboe/httpdump-scratch
 
 
 ```
